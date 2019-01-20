@@ -5,8 +5,6 @@
 ** [file description here]
 */
 
-
-
 #include "my.h"
 
 void create_object_pause(sfIntRect rect,

@@ -9,12 +9,12 @@
 
 void display_two(all_t all)
 {
-        for (int i = 0; i < all.nb_object; i++) {
-            if (all.object[i].type == MENU_PLAYER) {
-                sfRenderWindow_drawSprite(all.window.window,
-                all.object[i].sprite, NULL);
-            }
+    for (int i = 0; i < all.nb_object; i++) {
+        if (all.object[i].type == MENU_PLAYER) {
+            sfRenderWindow_drawSprite(all.window.window,
+            all.object[i].sprite, NULL);
         }
+    }
 }
 
 void menu_adding_two(all_t *all)
@@ -55,6 +55,6 @@ void display(all_t all)
 
 void display_text(all_t all)
 {
-        sfRenderWindow_drawText(all.window.window,
-        all.text[0].text, NULL);
+    sfRenderWindow_drawText(all.window.window,
+    all.text[0].text, NULL);
 }

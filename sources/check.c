@@ -5,8 +5,6 @@
 ** [file description here]
 */
 
-
-
 #include "my.h"
 
 void win_function(all_t *all)

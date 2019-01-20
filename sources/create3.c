@@ -5,8 +5,6 @@
 ** [file description here]
 */
 
-
-
 #include "my.h"
 
 void function_text(text_t txt, char *str,

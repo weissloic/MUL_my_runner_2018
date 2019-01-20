@@ -32,23 +32,23 @@ void init_all(all_t *all)
 
 void event_key(all_t *all)
 {
-        if (all->window.event.type == sfEvtClosed)
-            sfRenderWindow_close(all->window.window);
-        if (sfKeyboard_isKeyPressed(sfKeySpace) == sfTrue) {
-            if (all->game == 1 && all->is_jumping == 0)
-                sfMusic_play(all->jump_sound);
-                all->is_jumping = 1;
-        }
-        if (sfKeyboard_isKeyPressed(sfKeyP) == sfTrue) {
-            all->game = 0;
-            all->pause = 1;
-            all->object[6].display = 1;
-        }
-        if (sfKeyboard_isKeyPressed(sfKeyReturn) == sfTrue) {
-            all->game = 1;
-            all->pause = 0;
-            all->object[6].display = 0;
-        }
+    if (all->window.event.type == sfEvtClosed)
+        sfRenderWindow_close(all->window.window);
+    if (sfKeyboard_isKeyPressed(sfKeySpace) == sfTrue) {
+        if (all->game == 1 && all->is_jumping == 0)
+            sfMusic_play(all->jump_sound);
+            all->is_jumping = 1;
+    }
+    if (sfKeyboard_isKeyPressed(sfKeyP) == sfTrue) {
+        all->game = 0;
+        all->pause = 1;
+        all->object[6].display = 1;
+    }
+    if (sfKeyboard_isKeyPressed(sfKeyReturn) == sfTrue) {
+        all->game = 1;
+        all->pause = 0;
+        all->object[6].display = 0;
+    }
 }
 
 void event_management(all_t *all)

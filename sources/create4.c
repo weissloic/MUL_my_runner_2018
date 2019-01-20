@@ -5,34 +5,32 @@
 ** [file description here]
 */
 
-
 #include "my.h"
 
 void option_menu_three(all_t *all, sfSprite *sprite_menu, sfSprite *select_menu)
 {
-        all->all_texture.rect_mm2.top += 82.2 * 2;
-        all->all_texture.pos_menu.y += 82.2 * 2;
-        sfSprite_setTexture(select_menu, all->all_texture.mm2, sfTrue);
-        sfSprite_setTextureRect(select_menu, all->all_texture.rect_mm2);
-        sfSprite_setPosition(select_menu, all->all_texture.pos_menu);
-        sfRenderWindow_drawSprite(all->window.window, sprite_menu,
-        NULL);
-        sfRenderWindow_drawSprite(all->window.window, select_menu,
-        NULL);
+    all->all_texture.rect_mm2.top += 82.2 * 2;
+    all->all_texture.pos_menu.y += 82.2 * 2;
+    sfSprite_setTexture(select_menu, all->all_texture.mm2, sfTrue);
+    sfSprite_setTextureRect(select_menu, all->all_texture.rect_mm2);
+    sfSprite_setPosition(select_menu, all->all_texture.pos_menu);
+    sfRenderWindow_drawSprite(all->window.window, sprite_menu,
+    NULL);
+    sfRenderWindow_drawSprite(all->window.window, select_menu,
+    NULL);
 }
 
 void option_menu_four(all_t *all, sfSprite *sprite_menu, sfSprite *select_menu)
 {
-        all->all_texture.rect_mm2.top += 82.2 * 3;
-        all->all_texture.pos_menu.y += 82.2 * 3;
-
-        sfSprite_setTexture(select_menu, all->all_texture.mm2, sfTrue);
-        sfSprite_setTextureRect(select_menu, all->all_texture.rect_mm2);
-        sfSprite_setPosition(select_menu, all->all_texture.pos_menu);
-        sfRenderWindow_drawSprite(all->window.window, sprite_menu,
-        NULL);
-        sfRenderWindow_drawSprite(all->window.window, select_menu,
-        NULL);
+    all->all_texture.rect_mm2.top += 82.2 * 3;
+    all->all_texture.pos_menu.y += 82.2 * 3;
+    sfSprite_setTexture(select_menu, all->all_texture.mm2, sfTrue);
+    sfSprite_setTextureRect(select_menu, all->all_texture.rect_mm2);
+    sfSprite_setPosition(select_menu, all->all_texture.pos_menu);
+    sfRenderWindow_drawSprite(all->window.window, sprite_menu,
+    NULL);
+    sfRenderWindow_drawSprite(all->window.window, select_menu,
+    NULL);
 }
 
 void option_menu_ttwo(all_t *all, sfSprite *sprite_menu, sfSprite *select_menu)

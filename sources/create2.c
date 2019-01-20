@@ -5,8 +5,6 @@
 ** [file description here]
 */
 
-
-
 #include "my.h"
 
 all_texture_t create_all_texturesone(void)
